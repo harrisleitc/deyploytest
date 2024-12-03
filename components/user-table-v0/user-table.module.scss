@@ -1,0 +1,159 @@
+.userTable {
+    .tableActions {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+  
+    .addButton {
+      background-color: #4CAF50;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #45a049;
+      }
+    }
+  
+    .filterButton {
+      background-color: #f0f0f0;
+      border: none;
+      border-radius: 4px;
+      padding: 0.5rem;
+      cursor: pointer;
+      position: relative;
+  
+      &:hover {
+        background-color: #e0e0e0;
+      }
+  
+      &.active {
+        background-color: #e0e0e0;
+      }
+    }
+  
+    .filterIndicator {
+      position: absolute;
+      top: -2px;
+      right: -2px;
+      width: 8px;
+      height: 8px;
+      background-color: #4CAF50;
+      border-radius: 50%;
+    }
+  
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+  
+      th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+  
+      th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+    }
+  }
+  
+  .dialogOverlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    inset: 0;
+  }
+  
+  .dialogContent {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    max-width: 450px;
+    max-height: 85vh;
+    padding: 25px;
+  }
+  
+  .dialogTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .formField {
+    margin-bottom: 1rem;
+  
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+  
+    input, select {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  }
+  
+  .formActions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .submitButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: #45a049;
+    }
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdownMenuContent {
+    min-width: 120px;
+    background-color: white;
+    border-radius: 4px;
+    padding: 0.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdownMenuItem {
+    padding: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }
+  
+  .dropdownMenuItemIndicator {
+    margin-right: 0.5rem;
+  }
